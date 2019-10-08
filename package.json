@@ -1,13 +1,13 @@
 {
   "name": "worker-threads-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Worker threads with promise support",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^12.7.11",
     "typescript": "^3.6.3"

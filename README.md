@@ -46,7 +46,7 @@ parentPort.on('message', data => { //you can use await too
 ## Options
 
 ### Timeout
-It will throw timeout exceed error after given amount of milliseconds
+It will throw timeout exceed error after given amount of milliseconds. 
 
 Default: No Timeout
 
@@ -118,3 +118,11 @@ parentPort.on('message', data => {
 });
 ```
 
+### transferList
+You can also use transfer list for async calls, you may use 3rd parameter for them.
+
+```js
+await worker.postMessageAsync(5000, null, []);
+```
+
+As `worker-threads-promise` extends native `Worker`, you can use all other features of Worker classes using instance of `worker-threads-promise`.
